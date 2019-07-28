@@ -1,0 +1,68 @@
+
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  display: grid;
+  grid-template-areas:
+  'brand'
+  'links'
+  'weather';
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+
+}
+nav {
+  background-color:white;
+
+
+ 
+  
+}
+
+.brand {
+  grid-area: brand;
+  text-align: center;
+  letter-spacing: 9px;
+  padding: 5px;
+  font-size: 3em;
+  background:white;
+  margin: 2px auto auto auto;
+  border: solid 2px black;
+
+  
+ 
+}
+
+.climate {
+  grid-area: weather;
+  font-size: 2em;
+  text-align: center;
+  border: solid 2px black;
+  margin: 2px;
+
+
+}
+ul {
+    grid-area: links;
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    margin: auto;
+  }
+  
+  li {
+    display: inline-block;
+    padding: 10px 15px;
+    border: solid 2px black;
+    margin: 2px;
+
+   
+  }
+  
+ 

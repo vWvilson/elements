@@ -1,0 +1,10 @@
+.cards {
+  border: solid 2px black;
+  margin: 20px;
+  width: auto;
+  background: olive
+}
+
+.img {
+  width: 10vw;
+}
