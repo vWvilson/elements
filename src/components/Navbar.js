@@ -1,11 +1,10 @@
 import React from 'react';
 import  './navbar.css'
-import Weather from './Weather'
 
 
 
 
-const Navbar =() => {
+const Navbar =(props) => {
 
     return(
         <React.Fragment>
@@ -19,7 +18,9 @@ const Navbar =() => {
                 <li className='nav-items'>bottoms</li>
             </ul>
         </nav>
-        <div className='climate'>climate<Weather /></div>
+        <div className='climate'>
+        climate<div>{props.temp}&deg;</div></div>
+        {/* `Yo, ${name}!` */}
            
         </React.Fragment>
     )
