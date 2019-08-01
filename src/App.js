@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Component} from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import data from "./data";
@@ -12,7 +12,7 @@ const zip = 15206;
 const country = "us";
 const API_KEY = "ee4801f6e44a2eb4ac67c221634950b1";
 
-class App extends React.Component {
+class App extends Component {
   state = {
     temp: null,
     
@@ -28,6 +28,19 @@ class App extends React.Component {
         this.setState({ temp: data.main.temp });
       });
   }
+  Matcher(temp) {
+    if(temp >= 60 && temp <= 70 ) {
+      return 'flannel'
+    }else if (temp >= 70) {
+      return 'tee'
+    }else if(temp >= 55 && temp <= 65) {
+      return 'light'
+    } else if(temp >=0 && temp <= 55) {
+      return 'winter'
+    }
+  }
+
+  
  
   
 
